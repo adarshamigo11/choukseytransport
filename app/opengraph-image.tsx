@@ -3,6 +3,9 @@ import { ImageResponse } from "next/og";
 export const alt = "Chouksey Transport Packers & Movers – Sagar, MP";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
+// Edge runtime: next/og is designed for it, and it avoids the Node build-time
+// prerender crash (TypeError: Invalid URL) in @vercel/og on Windows hosts.
+export const runtime = "edge";
 
 export default function OpengraphImage() {
   return new ImageResponse(

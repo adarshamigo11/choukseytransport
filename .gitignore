@@ -3,6 +3,10 @@ node_modules
 out
 .env*.local
 .vercel
+.vercel-tmp
 next-env.d.ts
 *.tsbuildinfo
 .DS_Store
+
+.vercel
+.env*.local
