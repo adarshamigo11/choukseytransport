@@ -6,7 +6,7 @@ const config: Config = {
     extend: {
       colors: {
         navy: { DEFAULT: "#0B2545", light: "#1E3A8A", dark: "#071a33" },
-        accent: { DEFAULT: "#F97316", strong: "#FF5722" },
+        accent: { DEFAULT: "#E65100", strong: "#D84315" },
         paper: "#F8FAFC",
         ink: "#0F172A",
       },
@@ -15,9 +15,9 @@ const config: Config = {
       },
       keyframes: {
         pulseRing: {
-          "0%": { boxShadow: "0 0 0 0 rgba(249,115,22,0.6)" },
-          "70%": { boxShadow: "0 0 0 14px rgba(249,115,22,0)" },
-          "100%": { boxShadow: "0 0 0 0 rgba(249,115,22,0)" },
+          "0%": { boxShadow: "0 0 0 0 rgba(230,81,0,0.6)" },
+          "70%": { boxShadow: "0 0 0 14px rgba(230,81,0,0)" },
+          "100%": { boxShadow: "0 0 0 0 rgba(230,81,0,0)" },
         },
       },
       animation: { pulseRing: "pulseRing 2s infinite" },

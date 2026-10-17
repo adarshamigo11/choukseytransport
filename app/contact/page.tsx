@@ -50,7 +50,7 @@ export default function ContactPage() {
                 href={waHref()}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#25D366] px-8 py-4 text-lg font-extrabold text-white shadow-lg hover:bg-[#1ebe5d] sm:w-auto"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#1B5E20] px-8 py-4 text-lg font-extrabold text-white shadow-lg hover:bg-[#145218] sm:w-auto"
               >
                 <MessageCircle className="h-6 w-6" aria-hidden="true" />
                 WhatsApp Now
@@ -75,13 +75,13 @@ export default function ContactPage() {
             </div>
 
             <div className="rounded-2xl border border-slate-200 p-6 text-center">
-              <MessageCircle className="mx-auto h-10 w-10 text-[#25D366]" aria-hidden="true" />
+              <MessageCircle className="mx-auto h-10 w-10 text-[#1B5E20]" aria-hidden="true" />
               <h2 className="mt-3 text-lg font-bold text-navy">WhatsApp</h2>
               <a
                 href={waHref()}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-2 block text-2xl font-extrabold text-navy hover:text-[#25D366]"
+                className="mt-2 block text-2xl font-extrabold text-navy hover:text-[#1B5E20]"
               >
                 {site.phoneDisplay}
               </a>
@@ -161,7 +161,7 @@ export default function ContactPage() {
                 href={waHref()}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#25D366] px-8 py-4 text-lg font-extrabold text-white shadow-lg hover:bg-[#1ebe5d] sm:w-auto"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#1B5E20] px-8 py-4 text-lg font-extrabold text-white shadow-lg hover:bg-[#145218] sm:w-auto"
               >
                 <MessageCircle className="h-6 w-6" aria-hidden="true" />
                 WhatsApp Now

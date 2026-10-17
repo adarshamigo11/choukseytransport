@@ -28,7 +28,7 @@ export default function StickyCallBar() {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="WhatsApp (opens in new tab)"
-          className="col-span-2 flex items-center justify-center gap-2 rounded-xl bg-[#25D366] py-3 text-base font-extrabold text-white active:scale-[0.98]"
+          className="col-span-2 flex items-center justify-center gap-2 rounded-xl bg-[#1B5E20] py-3 text-base font-extrabold text-white active:scale-[0.98]"
         >
           <MessageCircle className="h-5 w-5" aria-hidden="true" />
           WhatsApp
