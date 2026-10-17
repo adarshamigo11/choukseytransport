@@ -8,8 +8,14 @@
 }
 
 html {
-  scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
+}
+
+/* Smooth scroll only for users without motion sensitivity */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 body {
@@ -20,6 +26,7 @@ body {
 
 section[id] {
   scroll-margin-top: 5rem;
+  contain: layout style paint;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -30,4 +37,29 @@ section[id] {
   .animate-ping {
     animation: none !important;
   }
+}
+
+/* Skip navigation link for keyboard users */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #0B2545;
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Performance: GPU-accelerate animated elements */
+.animate-pulseRing {
+  will-change: box-shadow;
+}
+
+.animate-ping {
+  will-change: transform, opacity;
 }

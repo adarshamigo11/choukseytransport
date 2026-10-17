@@ -28,7 +28,7 @@ export default function Hero() {
           <span className="text-accent">Safe, Fast &amp; Budget-Friendly</span> Shifting
         </h1>
 
-        <p className="mt-4 max-w-2xl text-base text-white/85 sm:text-lg">
+        <p className="mt-4 max-w-2xl text-base text-white sm:text-lg">
           {site.name} ({site.nameHindi}) — trusted house &amp; office shifting, packing,
           loading-unloading and truck rental in Sagar, MP and across India. One call, and
           we handle the rest.
@@ -40,13 +40,14 @@ export default function Hero() {
             href={waHref()}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="WhatsApp us (opens in new tab)"
             className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-white/40 px-6 py-4 text-lg font-bold hover:bg-white/10 sm:w-auto"
           >
             <MessageCircle className="h-5 w-5" aria-hidden="true" />
             WhatsApp Us
           </a>
         </div>
-        <p className="mt-3 text-sm text-white/70">
+        <p className="mt-3 text-sm text-white">
           Free quote in minutes · Call anytime, day or night
         </p>
 

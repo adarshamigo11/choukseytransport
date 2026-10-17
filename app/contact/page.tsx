@@ -32,7 +32,7 @@ export default function ContactPage() {
   return (
     <>
       <Header />
-      <main>
+      <main id="main-content">
         {/* Hero / CTA */}
         <section className="bg-gradient-to-br from-navy via-navy to-navy-light text-white">
           <div className="mx-auto max-w-6xl px-4 py-12 text-center sm:py-16">

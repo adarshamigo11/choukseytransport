@@ -95,6 +95,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en-IN">
       <body className="pb-24 antialiased md:pb-0">
+        <a href="#main-content" className="skip-link">
+          Skip to main content
+        </a>
         {children}
         <StickyCallBar />
         <script
