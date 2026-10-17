@@ -1,4 +1,5 @@
 import { MapPin, MessageCircle, Phone } from "lucide-react";
+import Link from "next/link";
 import { site, telHref, waHref } from "@/lib/site";
 
 const links = [
@@ -7,8 +8,9 @@ const links = [
   { href: "#services", label: "Truck Rental Services in Sagar" },
   { href: "#why-us", label: "Best Packers and Movers in Sagar" },
   { href: "#coverage", label: "House Shifting in Makronia & Rajakhedi" },
-  { href: "#coverage", label: "Packers Movers Bina, Khurai, Damoh, Rehli" },
+  { href: "#coverage", label: "Packers Movers Bina, Khurai, Damoh, Rehli, Banda" },
   { href: "#coverage", label: "Sagar to Bhopal & Vidisha Transport" },
+  { href: "/contact", label: "Contact Us — Call or WhatsApp" },
 ];
 
 export default function Footer() {
@@ -60,9 +62,15 @@ export default function Footer() {
           <ul className="mt-3 space-y-1.5 text-sm">
             {links.map((l) => (
               <li key={l.label}>
-                <a href={l.href} className="hover:text-accent">
-                  {l.label}
-                </a>
+                {l.href.startsWith("/") ? (
+                  <Link href={l.href} className="hover:text-accent">
+                    {l.label}
+                  </Link>
+                ) : (
+                  <a href={l.href} className="hover:text-accent">
+                    {l.label}
+                  </a>
+                )}
               </li>
             ))}
           </ul>

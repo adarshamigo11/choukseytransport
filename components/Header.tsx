@@ -8,6 +8,7 @@ const nav = [
   { href: "#why-us", label: "Why Us" },
   { href: "#coverage", label: "Areas We Serve" },
   { href: "#reviews", label: "Reviews" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export default function Header() {
@@ -29,11 +30,17 @@ export default function Header() {
         </Link>
 
         <nav aria-label="Main" className="hidden items-center gap-6 text-sm font-semibold text-slate-700 lg:flex">
-          {nav.map((n) => (
-            <a key={n.href} href={n.href} className="hover:text-accent-strong">
-              {n.label}
-            </a>
-          ))}
+          {nav.map((n) =>
+            n.href.startsWith("/") ? (
+              <Link key={n.href} href={n.href} className="hover:text-accent-strong">
+                {n.label}
+              </Link>
+            ) : (
+              <a key={n.href} href={n.href} className="hover:text-accent-strong">
+                {n.label}
+              </a>
+            )
+          )}
         </nav>
 
         <CallButton label={site.phoneDisplay} size="sm" />

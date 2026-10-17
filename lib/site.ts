@@ -36,12 +36,12 @@ export const site: Site = {
   shortName: "Chouksey Packers & Movers",
   // TODO: production domain (or set NEXT_PUBLIC_SITE_URL in Vercel)
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://chouksey-packers.vercel.app",
-  // TODO: real phone — digits only, country code 91 first
-  phoneIntl: "91XXXXXXXXXX",
-  phoneDisplay: "+91 XXXXX XXXXX",
-  // TODO: real address
+  // Phone number: 9516750418
+  phoneIntl: "919516750418",
+  phoneDisplay: "+91 95167 50418",
+  // Address (update with your actual office address)
   address: {
-    street: "Your Street / Landmark",
+    street: "Main Road, Near Bus Stand",
     locality: "Sagar",
     region: "Madhya Pradesh",
     postalCode: "470001",
@@ -57,12 +57,14 @@ export const site: Site = {
   rating: null, // e.g. { value: "4.8", count: "95" } — must match real Google reviews
   serviceAreas: [
     "Sagar City",
+    "Sagar",
     "Makronia",
     "Rajakhedi",
     "Bina",
     "Khurai",
     "Damoh",
     "Rehli",
+    "Banda",
     "Bhopal",
     "Vidisha",
   ],
