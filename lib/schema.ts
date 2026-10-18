@@ -1,4 +1,4 @@
-import { site } from "./site";
+import { site, allPhones } from "./site";
 
 /** MovingCompany (a LocalBusiness subtype) JSON-LD with NAP, geo, hours, radius. */
 export function buildSchema() {
@@ -64,6 +64,13 @@ export function buildSchema() {
         availableLanguage: ["Hindi", "English"],
         areaServed: "IN",
       },
+      ...allPhones.slice(1).map((phone) => ({
+        "@type": "ContactPoint" as const,
+        telephone: `+${phone.intl}`,
+        contactType: "customer service",
+        availableLanguage: ["Hindi", "English"],
+        areaServed: "IN",
+      })),
     ],
     areaServed: [
       ...site.serviceAreas.map((a) => ({

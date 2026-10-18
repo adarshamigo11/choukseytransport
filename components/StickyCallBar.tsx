@@ -1,5 +1,5 @@
 import { MessageCircle, Phone } from "lucide-react";
-import { telHref, waHref } from "@/lib/site";
+import { telHref, waHref, allPhones } from "@/lib/site";
 
 /** Persistent bottom bar — mobile only (hidden from md up). */
 export default function StickyCallBar() {
@@ -17,7 +17,8 @@ export default function StickyCallBar() {
       </p>
       <div className="grid grid-cols-5 gap-2 p-2">
         <a
-          href={telHref}
+          href={`tel:+${allPhones[0].intl}`}
+          aria-label={`Call ${allPhones[0].display}`}
           className="col-span-3 flex items-center justify-center gap-2 rounded-xl bg-accent py-3 text-base font-extrabold text-white active:scale-[0.98]"
         >
           <Phone className="h-5 w-5" aria-hidden="true" />
@@ -32,6 +33,24 @@ export default function StickyCallBar() {
         >
           <MessageCircle className="h-5 w-5" aria-hidden="true" />
           WhatsApp
+        </a>
+      </div>
+      <div className="grid grid-cols-2 gap-2 px-2 pb-2">
+        <a
+          href={`tel:+${allPhones[1].intl}`}
+          aria-label={`Call ${allPhones[1].display}`}
+          className="flex items-center justify-center gap-1.5 rounded-lg bg-accent/80 py-2 text-xs font-bold text-white active:scale-[0.98]"
+        >
+          <Phone className="h-3.5 w-3.5" aria-hidden="true" />
+          {allPhones[1].display}
+        </a>
+        <a
+          href={`tel:+${allPhones[2].intl}`}
+          aria-label={`Call ${allPhones[2].display}`}
+          className="flex items-center justify-center gap-1.5 rounded-lg bg-accent/80 py-2 text-xs font-bold text-white active:scale-[0.98]"
+        >
+          <Phone className="h-3.5 w-3.5" aria-hidden="true" />
+          {allPhones[2].display}
         </a>
       </div>
     </div>

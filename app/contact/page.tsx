@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CallButton from "@/components/CallButton";
-import { site, telHref, waHref } from "@/lib/site";
+import { site, telHref, waHref, allPhones } from "@/lib/site";
 import { MapPin, MessageCircle, Phone, Clock, Truck, Package, Home, Building2 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -56,6 +56,18 @@ export default function ContactPage() {
                 WhatsApp Now
               </a>
             </div>
+            <div className="mt-4 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-white/90">
+              <span>Also call:</span>
+              {allPhones.slice(1).map((phone) => (
+                <a
+                  key={phone.intl}
+                  href={`tel:+${phone.intl}`}
+                  className="font-semibold hover:text-accent"
+                >
+                  {phone.display}
+                </a>
+              ))}
+            </div>
             <p className="mt-4 text-sm text-white/70">
               {site.phoneDisplay} · Free quote in minutes · No obligation
             </p>
@@ -71,6 +83,15 @@ export default function ContactPage() {
               <a href={telHref} className="mt-2 block text-2xl font-extrabold text-navy hover:text-accent">
                 {site.phoneDisplay}
               </a>
+              {allPhones.slice(1).map((phone) => (
+                <a
+                  key={phone.intl}
+                  href={`tel:+${phone.intl}`}
+                  className="block text-lg font-bold text-navy hover:text-accent"
+                >
+                  {phone.display}
+                </a>
+              ))}
               <p className="mt-1 text-sm text-slate-600">Available 24/7 for bookings</p>
             </div>
 

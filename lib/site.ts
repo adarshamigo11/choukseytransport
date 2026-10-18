@@ -14,6 +14,7 @@ type Site = {
   url: string;
   phoneIntl: string;
   phoneDisplay: string;
+  additionalPhones: { intl: string; display: string }[];
   address: {
     street: string;
     locality: string;
@@ -39,6 +40,11 @@ export const site: Site = {
   // Phone number: 9516750418
   phoneIntl: "919516750418",
   phoneDisplay: "+91 95167 50418",
+  // Additional phone numbers
+  additionalPhones: [
+    { intl: "919425188487", display: "+91 94251 88487" },
+    { intl: "919893137841", display: "+91 98931 37841" },
+  ],
   // Address (update with your actual office address)
   address: {
     street: "Main Road, Near Bus Stand",
@@ -71,6 +77,11 @@ export const site: Site = {
 };
 
 export const telHref = `tel:+${site.phoneIntl}`;
+
+export const allPhones = [
+  { intl: site.phoneIntl, display: site.phoneDisplay },
+  ...site.additionalPhones,
+];
 
 export const waHref = (
   text = "Hello, I need a quote for packers & movers / truck rental in Sagar."

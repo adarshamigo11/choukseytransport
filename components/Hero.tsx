@@ -1,6 +1,6 @@
 import { BadgeCheck, Clock, IndianRupee, MessageCircle, Users } from "lucide-react";
 import CallButton from "./CallButton";
-import { site, waHref } from "@/lib/site";
+import { site, waHref, allPhones } from "@/lib/site";
 
 const trust = [
   { icon: Clock, text: "24/7 Booking" },
@@ -45,6 +45,15 @@ export default function Hero() {
           >
             <MessageCircle className="h-5 w-5" aria-hidden="true" />
             WhatsApp Us
+          </a>
+        </div>
+        <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-sm text-white/90">
+          <span>Or call:</span>
+          <a href={`tel:+${allPhones[1].intl}`} className="font-semibold hover:text-accent">
+            {allPhones[1].display}
+          </a>
+          <a href={`tel:+${allPhones[2].intl}`} className="font-semibold hover:text-accent">
+            {allPhones[2].display}
           </a>
         </div>
         <p className="mt-3 text-sm text-white">

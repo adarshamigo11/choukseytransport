@@ -1,6 +1,6 @@
 import { MapPin, MessageCircle, Phone } from "lucide-react";
 import Link from "next/link";
-import { site, telHref, waHref } from "@/lib/site";
+import { site, telHref, waHref, allPhones } from "@/lib/site";
 
 const links = [
   { href: "#services", label: "Packers and Movers in Sagar" },
@@ -42,6 +42,14 @@ export default function Footer() {
                 {site.phoneDisplay}
               </a>
             </p>
+            {allPhones.slice(1).map((phone) => (
+              <p key={phone.intl}>
+                <a href={`tel:+${phone.intl}`} className="flex items-center gap-2 font-bold text-white hover:text-accent">
+                  <Phone className="h-4 w-4 text-accent" aria-hidden="true" />
+                  {phone.display}
+                </a>
+              </p>
+            ))}
             <p>
               <a
                 href={waHref()}
