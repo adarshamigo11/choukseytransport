@@ -1,11 +1,22 @@
+import Image from "next/image";
 import { Globe2, MapPin } from "lucide-react";
 import CallPrompt from "./CallPrompt";
 import { site } from "@/lib/site";
 
 export default function Coverage() {
   return (
-    <section id="coverage" aria-labelledby="coverage-title" className="px-4 py-14">
-      <div className="mx-auto max-w-6xl">
+    <section id="coverage" aria-labelledby="coverage-title" className="relative overflow-hidden px-4 py-14">
+      <div className="absolute inset-0 z-0 opacity-10">
+        <Image
+          src="/images/house-shifting-loading.jpg"
+          alt=""
+          fill
+          className="object-cover"
+          aria-hidden="true"
+          sizes="100vw"
+        />
+      </div>
+      <div className="relative z-10 mx-auto max-w-6xl">
         <p className="text-sm font-bold uppercase tracking-wide text-accent-strong">
           Areas We Serve
         </p>

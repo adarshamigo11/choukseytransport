@@ -2,15 +2,19 @@ import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CallButton from "@/components/CallButton";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { site, telHref, waHref, allPhones } from "@/lib/site";
+import { buildBreadcrumbSchema } from "@/lib/schema";
 import { MapPin, MessageCircle, Phone, Clock, Truck, Package, Home, Building2 } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Contact Chouksey Transport — Packers and Movers in Sagar",
   description: `Call ${site.phoneDisplay} for instant quote on packers and movers, transport, house shifting, office relocation and truck rental in Sagar, Makronia, Rehli, Bina, Khurai, Damoh, Banda. Open 24/7.`,
+  alternates: { canonical: "/contact" },
   openGraph: {
     title: "Contact Chouksey Transport — Packers and Movers in Sagar",
     description: `Call ${site.phoneDisplay} for instant quote. Open 24/7.`,
+    url: `${site.url}/contact`,
   },
 };
 
@@ -32,6 +36,7 @@ export default function ContactPage() {
   return (
     <>
       <Header />
+      <Breadcrumbs items={[{ name: "Contact Us", href: "/contact" }]} />
       <main id="main-content">
         {/* Hero / CTA */}
         <section className="bg-gradient-to-br from-navy via-navy to-navy-light text-white">
@@ -192,6 +197,15 @@ export default function ContactPage() {
         </section>
       </main>
       <Footer />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(buildBreadcrumbSchema([
+            { name: "Home", url: "/" },
+            { name: "Contact Us", url: "/contact" },
+          ])),
+        }}
+      />
     </>
   );
 }

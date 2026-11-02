@@ -199,3 +199,33 @@ export function buildActionSchema() {
     },
   };
 }
+
+/** BreadcrumbList schema for a given page */
+export function buildBreadcrumbSchema(items: { name: string; url: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, idx) => ({
+      "@type": "ListItem" as const,
+      position: idx + 1,
+      name: item.name,
+      item: item.url.startsWith("http") ? item.url : `${site.url}${item.url}`,
+    })),
+  };
+}
+
+/** FAQPage schema for structured FAQ content */
+export function buildFaqSchema(faqs: { question: string; answer: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map(({ question, answer }) => ({
+      "@type": "Question",
+      name: question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: answer,
+      },
+    })),
+  };
+}

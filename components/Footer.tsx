@@ -2,22 +2,34 @@ import { MapPin, MessageCircle, Phone } from "lucide-react";
 import Link from "next/link";
 import { site, telHref, waHref, allPhones } from "@/lib/site";
 
-const links = [
-  { href: "#services", label: "Packers and Movers in Sagar" },
-  { href: "#services", label: "Transport in Sagar" },
-  { href: "#services", label: "Truck Rental Services in Sagar" },
-  { href: "#why-us", label: "Best Packers and Movers in Sagar" },
-  { href: "#coverage", label: "House Shifting in Makronia & Rajakhedi" },
-  { href: "#coverage", label: "Packers Movers Bina, Khurai, Damoh, Rehli, Banda" },
-  { href: "#coverage", label: "Sagar to Bhopal & Vidisha Transport" },
-  { href: "/contact", label: "Contact Us — Call or WhatsApp" },
+const serviceLinks = [
+  { href: "/packers-and-movers", label: "Packers and Movers in Sagar" },
+  { href: "/house-shifting", label: "House Shifting in Sagar" },
+  { href: "/office-shifting", label: "Office Shifting in Sagar" },
+  { href: "/local-shifting", label: "Local Shifting in Sagar" },
+  { href: "/domestic-relocation", label: "Domestic Relocation from Sagar" },
+  { href: "/car-transportation", label: "Car Transportation from Sagar" },
+  { href: "/bike-transportation", label: "Bike Transportation from Sagar" },
+  { href: "/commercial-transportation", label: "Commercial Transport in Sagar" },
+  { href: "/packing-unpacking", label: "Packing and Unpacking in Sagar" },
+];
+
+const areaLinks = [
+  { href: "/packers-and-movers", label: "Packers Movers Makronia" },
+  { href: "/packers-and-movers", label: "Packers Movers Bina" },
+  { href: "/packers-and-movers", label: "Packers Movers Khurai" },
+  { href: "/packers-and-movers", label: "Packers Movers Damoh" },
+  { href: "/packers-and-movers", label: "Packers Movers Rehli" },
+  { href: "/packers-and-movers", label: "Packers Movers Banda" },
+  { href: "/domestic-relocation", label: "Sagar to Bhopal Transport" },
+  { href: "/domestic-relocation", label: "Sagar to Vidisha Transport" },
 ];
 
 export default function Footer() {
   const a = site.address;
   return (
     <footer className="bg-navy-dark text-white/85">
-      <div className="mx-auto grid max-w-6xl gap-8 px-4 py-12 md:grid-cols-3">
+      <div className="mx-auto grid max-w-6xl gap-8 px-4 py-12 md:grid-cols-4">
         <div>
           <p className="text-lg font-extrabold text-white">{site.name}</p>
           <p className="text-sm">{site.nameHindi}</p>
@@ -65,27 +77,41 @@ export default function Footer() {
           </address>
         </div>
 
-        <nav aria-label="Footer">
-          <p className="font-bold text-white">Popular Searches</p>
+        <nav aria-label="Our Services">
+          <p className="font-bold text-white">Our Services</p>
           <ul className="mt-3 space-y-1.5 text-sm">
-            {links.map((l) => (
-              <li key={l.label}>
-                {l.href.startsWith("/") ? (
-                  <Link href={l.href} className="hover:text-accent">
-                    {l.label}
-                  </Link>
-                ) : (
-                  <a href={l.href} className="hover:text-accent">
-                    {l.label}
-                  </a>
-                )}
+            {serviceLinks.map((l) => (
+              <li key={l.href}>
+                <Link href={l.href} className="hover:text-accent">
+                  {l.label}
+                </Link>
               </li>
             ))}
           </ul>
         </nav>
+
+        <nav aria-label="Areas We Serve">
+          <p className="font-bold text-white">Areas We Serve</p>
+          <ul className="mt-3 space-y-1.5 text-sm">
+            {areaLinks.map((l, idx) => (
+              <li key={`${l.label}-${idx}`}>
+                <Link href={l.href} className="hover:text-accent">
+                  {l.label}
+                </Link>
+              </li>
+            ))}
+            <li>
+              <Link href="/contact" className="font-bold text-accent hover:text-white">
+                Contact Us — Call or WhatsApp
+              </Link>
+            </li>
+          </ul>
+        </nav>
       </div>
       <div className="border-t border-white/10 px-4 py-4 text-center text-xs text-white/60">
-        © {new Date().getFullYear()} {site.name}. All rights reserved.
+        © {new Date().getFullYear()} {site.name}. All rights reserved. |{" "}
+        <Link href="/" className="hover:text-accent">Packers and Movers in Sagar</Link> |{" "}
+        <Link href="/about-us" className="hover:text-accent">About Us</Link>
       </div>
     </footer>
   );

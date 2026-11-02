@@ -1,14 +1,26 @@
 import Link from "next/link";
-import { Truck } from "lucide-react";
+import { Truck, ChevronDown } from "lucide-react";
 import CallButton from "./CallButton";
 import { site } from "@/lib/site";
 
-const nav = [
-  { href: "#services", label: "Services" },
-  { href: "#why-us", label: "Why Us" },
-  { href: "#coverage", label: "Areas We Serve" },
-  { href: "#reviews", label: "Reviews" },
+const mainNav = [
+  { href: "/#services", label: "Services" },
+  { href: "/#why-us", label: "Why Us" },
+  { href: "/#coverage", label: "Areas" },
+  { href: "/#reviews", label: "Reviews" },
   { href: "/contact", label: "Contact" },
+];
+
+const serviceLinks = [
+  { href: "/packers-and-movers", label: "Packers and Movers" },
+  { href: "/house-shifting", label: "House Shifting" },
+  { href: "/office-shifting", label: "Office Shifting" },
+  { href: "/local-shifting", label: "Local Shifting" },
+  { href: "/domestic-relocation", label: "Domestic Relocation" },
+  { href: "/car-transportation", label: "Car Transportation" },
+  { href: "/bike-transportation", label: "Bike Transportation" },
+  { href: "/commercial-transportation", label: "Commercial Transport" },
+  { href: "/packing-unpacking", label: "Packing & Unpacking" },
 ];
 
 export default function Header() {
@@ -30,7 +42,7 @@ export default function Header() {
         </Link>
 
         <nav aria-label="Main" className="hidden items-center gap-6 text-sm font-semibold text-slate-700 lg:flex">
-          {nav.map((n) =>
+          {mainNav.map((n) =>
             n.href.startsWith("/") ? (
               <Link key={n.href} href={n.href} className="hover:text-accent-strong">
                 {n.label}
@@ -46,13 +58,16 @@ export default function Header() {
         <CallButton label={site.phoneDisplay} size="sm" />
       </div>
 
+      {/* Service links bar — important for sitelinks and internal linking */}
       <div className="hidden border-t border-slate-100 bg-slate-50 md:block">
         <ul className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-6 gap-y-1 px-4 py-1.5 text-xs font-semibold text-slate-600">
-          <li>House Shifting</li>
-          <li>Office Shifting</li>
-          <li>Packing &amp; Loading</li>
-          <li>Truck Rental</li>
-          <li>Pan-India Relocation</li>
+          {serviceLinks.map((link) => (
+            <li key={link.href}>
+              <Link href={link.href} className="hover:text-accent-strong">
+                {link.label}
+              </Link>
+            </li>
+          ))}
         </ul>
       </div>
     </header>

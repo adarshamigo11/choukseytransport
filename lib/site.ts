@@ -33,10 +33,10 @@ type Site = {
 
 export const site: Site = {
   name: "Chouksey Transport Packers & Movers",
-  nameHindi: "चौकसे पैकर्स एंड मूवर्स",
-  shortName: "Chouksey Packers & Movers",
-  // TODO: production domain (or set NEXT_PUBLIC_SITE_URL in Vercel)
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://chouksey-packers.vercel.app",
+  nameHindi: "चौकसे ट्रांसपोर्ट पैकर्स एंड मूवर्स",
+  shortName: "Chouksey Transport",
+  // Production domain
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.choukseytransportpackersandmovers.in",
   // Phone number: 9516750418
   phoneIntl: "919516750418",
   phoneDisplay: "+91 95167 50418",

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Building2, Home, Package, Route, Truck } from "lucide-react";
 import CallPrompt from "./CallPrompt";
 
@@ -7,24 +8,40 @@ const services = [
     title: "House & Office Shifting",
     text: "Complete home and office relocation in Sagar and nearby towns — careful handling of furniture, appliances and fragile items.",
     points: ["1BHK to large homes", "Shops & offices", "Furniture dismantle & refit"],
+    links: [
+      { href: "/house-shifting", label: "House Shifting" },
+      { href: "/office-shifting", label: "Office Shifting" },
+    ],
   },
   {
     icon: Package,
-    title: "Packing, Loading & Unloading",
+    title: "Packing, Loading & Unpacking",
     text: "Quality packing material and trained staff for safe loading and unloading, so your goods reach undamaged.",
     points: ["Bubble wrap & cartons", "Trained loaders", "Careful unloading"],
+    links: [
+      { href: "/packing-unpacking", label: "Packing & Unpacking" },
+      { href: "/packers-and-movers", label: "Packers and Movers" },
+    ],
   },
   {
     icon: Truck,
     title: "Dedicated & Shared Truck Rental",
     text: "Truck rental services in Sagar for full-load or part-load goods transport — pick the size that fits your budget.",
     points: ["Mini to large trucks", "Full or part load", "Local & intercity"],
+    links: [
+      { href: "/commercial-transportation", label: "Commercial Transport" },
+      { href: "/local-shifting", label: "Local Shifting" },
+    ],
   },
   {
     icon: Route,
     title: "Pan-India Long Distance Relocation",
     text: "Reliable transport from Sagar to Bhopal, Indore, Delhi and every major city across India.",
     points: ["Door-to-door service", "Goods transport", "Planned delivery schedule"],
+    links: [
+      { href: "/domestic-relocation", label: "Domestic Relocation" },
+      { href: "/car-transportation", label: "Car Transportation" },
+    ],
   },
 ];
 
@@ -44,7 +61,7 @@ export default function Services() {
         </p>
 
         <div className="mt-8 grid gap-5 sm:grid-cols-2">
-          {services.map(({ icon: Icon, title, text, points }) => (
+          {services.map(({ icon: Icon, title, text, points, links }) => (
             <article
               key={title}
               className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
@@ -64,6 +81,17 @@ export default function Services() {
                   </li>
                 ))}
               </ul>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {links.map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className="rounded-full bg-accent/10 px-3 py-1 text-xs font-bold text-accent-strong hover:bg-accent hover:text-white transition"
+                  >
+                    {link.label} →
+                  </Link>
+                ))}
+              </div>
             </article>
           ))}
         </div>

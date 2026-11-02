@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { BadgeCheck, Clock, IndianRupee, MessageCircle, Users } from "lucide-react";
 import CallButton from "./CallButton";
 import { site, waHref, allPhones } from "@/lib/site";
@@ -13,9 +14,21 @@ export default function Hero() {
   return (
     <section
       aria-labelledby="hero-title"
-      className="bg-gradient-to-br from-navy via-navy to-navy-light text-white"
+      className="relative bg-gradient-to-br from-navy via-navy to-navy-light text-white"
     >
-      <div className="mx-auto max-w-6xl px-4 pb-12 pt-10 sm:pt-14 md:pb-16">
+      {/* Background image */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/images/planning-moving-service.jpg"
+          alt="Chouksey Transport packers and movers team in Sagar"
+          fill
+          className="object-cover opacity-15"
+          priority
+          sizes="100vw"
+        />
+      </div>
+
+      <div className="relative z-10 mx-auto max-w-6xl px-4 pb-12 pt-10 sm:pt-14 md:pb-16">
         <p className="inline-block rounded-full bg-accent/15 px-3 py-1 text-xs font-bold uppercase tracking-wide text-accent">
           Sagar · Makronia · Bina · Damoh · All India
         </p>
