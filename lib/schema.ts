@@ -15,7 +15,7 @@ export function buildSchema() {
       "Transport in Sagar",
     ],
     description:
-      "Chouksey Transport Packers & Movers — best packers and movers, transport services, house & office shifting, packing-loading-unloading, dedicated & shared truck rental in Sagar, Makronia, Rehli, Bina, Khurai, Damoh, Banda, Rajakhedi, Bhopal, Vidisha and all India. Call +91 95167 50418 for instant quote.",
+      "Chouksey Transport Packers & Movers — best packers and movers, transport services, house & office shifting, packing-loading-unloading, dedicated & shared truck rental in Sagar, Makronia, Rehli, Bina, Khurai, Damoh, Banda, Rajakhedi, Bhopal, Vidisha and all India. Call +91 94251 88487 for instant quote.",
     url: site.url,
     telephone: `+${site.phoneIntl}`,
     priceRange: site.priceRange,

@@ -4,7 +4,7 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Commercial Transportation in Sagar | Goods Transport Services - Chouksey Transport",
-  description: "Commercial goods transportation services in Sagar, MP. Dedicated trucks, part-load options, safe delivery. Call +91 95167 50418 for commercial transport quotes.",
+  description: "Commercial goods transportation services in Sagar, MP. Dedicated trucks, part-load options, safe delivery. Call +91 94251 88487 for commercial transport quotes.",
   keywords: ["commercial transportation sagar", "goods transport sagar", "truck rental sagar", "commercial movers sagar"],
   alternates: { canonical: "/commercial-transportation" },
 };

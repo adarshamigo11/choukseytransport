@@ -4,7 +4,7 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Bike Transportation from Sagar | Motorcycle Transport - Chouksey Transport",
-  description: "Safe bike and motorcycle transportation from Sagar to any city. Specialized bike carriers, secure packaging. Call +91 95167 50418 for bike transport quotes.",
+  description: "Safe bike and motorcycle transportation from Sagar to any city. Specialized bike carriers, secure packaging. Call +91 94251 88487 for bike transport quotes.",
   keywords: ["bike transportation sagar", "motorcycle transport", "bike carrier sagar", "bike relocation india"],
   alternates: { canonical: "/bike-transportation" },
 };

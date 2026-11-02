@@ -4,7 +4,7 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Domestic Relocation from Sagar | Pan-India Moving Services - Chouksey Transport",
-  description: "Domestic relocation services from Sagar to anywhere in India. Safe, reliable long-distance moving. Call +91 95167 50418 for intercity moving quotes.",
+  description: "Domestic relocation services from Sagar to anywhere in India. Safe, reliable long-distance moving. Call +91 94251 88487 for intercity moving quotes.",
   keywords: ["domestic relocation sagar", "intercity movers sagar", "long distance moving", "pan india packers movers"],
   alternates: { canonical: "/domestic-relocation" },
 };

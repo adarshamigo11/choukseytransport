@@ -37,13 +37,13 @@ export const site: Site = {
   shortName: "Chouksey Transport",
   // Production domain
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.choukseytransportpackersandmovers.in",
-  // Phone number: 9516750418
-  phoneIntl: "919516750418",
-  phoneDisplay: "+91 95167 50418",
+  // Phone number: 9425188487 (primary)
+  phoneIntl: "919425188487",
+  phoneDisplay: "+91 94251 88487",
   // Additional phone numbers
   additionalPhones: [
-    { intl: "919425188487", display: "+91 94251 88487" },
     { intl: "919893137841", display: "+91 98931 37841" },
+    { intl: "919516750418", display: "+91 95167 50418" },
   ],
   // Address (update with your actual office address)
   address: {

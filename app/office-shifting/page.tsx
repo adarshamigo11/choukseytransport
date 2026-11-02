@@ -4,7 +4,7 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Office Shifting in Sagar | Commercial Office Relocation - Chouksey Transport",
-  description: "Professional office shifting and commercial relocation services in Sagar. Minimal downtime, safe equipment transport. Call +91 95167 50418.",
+  description: "Professional office shifting and commercial relocation services in Sagar. Minimal downtime, safe equipment transport. Call +91 94251 88487.",
   keywords: ["office shifting sagar", "commercial relocation sagar", "office movers", "corporate shifting"],
   alternates: { canonical: "/office-shifting" },
 };

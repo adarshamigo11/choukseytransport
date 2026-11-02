@@ -4,7 +4,7 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Packing and Unpacking Services in Sagar | Professional Packing - Chouksey Transport",
-  description: "Professional packing and unpacking services in Sagar. Quality materials, trained staff, safe handling. Call +91 95167 50418 for packing service quotes.",
+  description: "Professional packing and unpacking services in Sagar. Quality materials, trained staff, safe handling. Call +91 94251 88487 for packing service quotes.",
   keywords: ["packing unpacking sagar", "professional packing services sagar", "packing materials sagar", "loading unloading sagar"],
   alternates: { canonical: "/packing-unpacking" },
 };

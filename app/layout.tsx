@@ -7,7 +7,7 @@ import StickyCallBar from "@/components/StickyCallBar";
 const title =
   "Packers and Movers in Sagar | Transport & Truck Rental – Chouksey Transport";
 const description =
-  "Best packers and movers in Sagar, MP — house & office shifting, packing, loading, unloading and truck rental services in Sagar, Makronia, Rajakhedi, Bina, Khurai, Damoh, Rehli, Banda and all India. Call +91 95167 50418 for instant quote.";
+  "Best packers and movers in Sagar, MP — house & office shifting, packing, loading, unloading and truck rental services in Sagar, Makronia, Rajakhedi, Bina, Khurai, Damoh, Rehli, Banda and all India. Call +91 94251 88487 for instant quote.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),

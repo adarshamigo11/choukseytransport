@@ -4,7 +4,7 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Packers and Movers in Sagar | Best Moving Services - Chouksey Transport",
-  description: "Top-rated packers and movers in Sagar, MP. Professional house & office shifting, packing, loading, unloading services. Call +91 95167 50418 for free quote.",
+  description: "Top-rated packers and movers in Sagar, MP. Professional house & office shifting, packing, loading, unloading services. Call +91 94251 88487 for free quote.",
   keywords: ["packers and movers in sagar", "best packers and movers sagar", "moving services sagar", "packers movers MP"],
   alternates: { canonical: "/packers-and-movers" },
   openGraph: {
@@ -55,7 +55,7 @@ export default function PackersAndMoversPage() {
         },
         {
           question: "How much do packers and movers charge in Sagar?",
-          answer: "Our charges depend on the distance, volume of goods, and type of service required. For local shifting within Sagar, charges typically start from ₹5,000. Contact us at +91 95167 50418 for a free, no-obligation quote.",
+          answer: "Our charges depend on the distance, volume of goods, and type of service required. For local shifting within Sagar, charges typically start from ₹5,000. Contact us at +91 94251 88487 for a free, no-obligation quote.",
         },
         {
           question: "Do you provide packing materials?",

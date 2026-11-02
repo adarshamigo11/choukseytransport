@@ -4,7 +4,7 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "House Shifting in Sagar | Home Relocation Services - Chouksey Transport",
-  description: "Professional house shifting services in Sagar, MP. Safe home relocation with packing, loading, transport & unpacking. Call +91 95167 50418 for free quote.",
+  description: "Professional house shifting services in Sagar, MP. Safe home relocation with packing, loading, transport & unpacking. Call +91 94251 88487 for free quote.",
   keywords: ["house shifting sagar", "home relocation sagar", "house shifting services", "home movers sagar"],
   alternates: { canonical: "/house-shifting" },
 };
@@ -57,7 +57,7 @@ export default function HouseShiftingPage() {
         },
         {
           question: "What is the cost of house shifting in Sagar?",
-          answer: "House shifting costs depend on the size of your home, distance, and volume of items. For a 1BHK within Sagar, charges start from ₹5,000. For 2BHK, ₹8,000-₹12,000. For 3BHK and above, ₹15,000+. Call +91 95167 50418 for an exact quote.",
+          answer: "House shifting costs depend on the size of your home, distance, and volume of items. For a 1BHK within Sagar, charges start from ₹5,000. For 2BHK, ₹8,000-₹12,000. For 3BHK and above, ₹15,000+. Call +91 94251 88487 for an exact quote.",
         },
       ]}
       relatedServices={[

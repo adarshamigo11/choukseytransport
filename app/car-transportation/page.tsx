@@ -4,7 +4,7 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Car Transportation from Sagar | Vehicle Transport Services - Chouksey Transport",
-  description: "Safe car transportation services from Sagar to any city in India. Enclosed car carriers, insurance coverage. Call +91 95167 50418 for car transport quotes.",
+  description: "Safe car transportation services from Sagar to any city in India. Enclosed car carriers, insurance coverage. Call +91 94251 88487 for car transport quotes.",
   keywords: ["car transportation sagar", "car carrier sagar", "vehicle transport", "car relocation india"],
   alternates: { canonical: "/car-transportation" },
 };

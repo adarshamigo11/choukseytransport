@@ -4,7 +4,7 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Local Shifting in Sagar | Local Packers and Movers - Chouksey Transport",
-  description: "Local shifting services in Sagar, MP. Quick and affordable local house and office relocation. Same-day service available. Call +91 95167 50418.",
+  description: "Local shifting services in Sagar, MP. Quick and affordable local house and office relocation. Same-day service available. Call +91 94251 88487.",
   keywords: ["local shifting sagar", "local packers movers sagar", "local movers", "within city shifting"],
   alternates: { canonical: "/local-shifting" },
 };
@@ -45,7 +45,7 @@ export default function LocalShiftingPage() {
       faqs={[
         {
           question: "Do you provide same-day local shifting service?",
-          answer: "Yes, we offer same-day local shifting services in Sagar subject to availability. For guaranteed same-day service, we recommend booking at least one day in advance. Call +91 95167 50418 to check availability.",
+          answer: "Yes, we offer same-day local shifting services in Sagar subject to availability. For guaranteed same-day service, we recommend booking at least one day in advance. Call +91 94251 88487 to check availability.",
         },
         {
           question: "What areas in Sagar do you serve for local shifting?",
